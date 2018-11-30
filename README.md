@@ -1,2 +1,2 @@
-# stone-paper-and-scissors
+# Stone paper and scissors
 Game of stone, paper or scissors...
