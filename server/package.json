@@ -6,6 +6,8 @@
   "scripts": {
     "start": "./bin/start",
     "start:dev": "nodemon ./src/index.js",
+    "build": "npm run clean && babel --out-dir dist src",
+    "clean": "rm -rf dist",
     "test": ""
   },
   "keywords": [],
