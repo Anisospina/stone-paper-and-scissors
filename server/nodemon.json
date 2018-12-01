@@ -1,0 +1,7 @@
+{
+    "watch": ["src/"],
+    "events": {
+        "restart": "osascript -e 'display notification\"Restarting server\" with title \"Nodemon\"'"
+    },
+    "exec": "babel-node"
+}
