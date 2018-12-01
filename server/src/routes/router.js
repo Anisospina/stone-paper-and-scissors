@@ -1,7 +1,7 @@
-const express = require('express');
+import express from 'express';
 const app = express();
 
-const apiRouter = require('./api-router');
+import apiRouter from './api-router';
 
 app.get('/', (_, res) => {
     res.json({online: true});
@@ -9,4 +9,4 @@ app.get('/', (_, res) => {
 
 app.use('/api', apiRouter);
 
-module.exports = app;
+export default app;

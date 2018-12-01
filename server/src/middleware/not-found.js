@@ -1,6 +1,6 @@
 const defaultMessage = 'Not found';
 
-module.exports = (req, res) => {
+export default (req, res) => {
     res.status(404);
 
     if(req.accepts('json')) {
@@ -9,4 +9,4 @@ module.exports = (req, res) => {
     }
 
     res.send(defaultMessage);
-} 
+};

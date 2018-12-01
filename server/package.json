@@ -8,7 +8,7 @@
     "start:dev": "nodemon ./src/index.js",
     "build": "npm run clean && babel --out-dir dist src",
     "clean": "rm -rf dist",
-    "test": ""
+    "test": "babel-node run-spec"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +21,8 @@
     "@babel/core": "^7.1.6",
     "@babel/node": "^7.0.0",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-env": "^7.1.6",
+    "jasmine": "^3.3.0",
     "nodemon": "^1.18.7"
   }
 }

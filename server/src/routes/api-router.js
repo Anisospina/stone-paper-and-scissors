@@ -5,4 +5,4 @@ app.get('/', (_, res) => {
     res.json('online');
 });
 
-module.exports = app;
+export default app;
