@@ -1,6 +1,25 @@
+@import '../../../scss/colors.scss';
+
+%card-form {
+  background-color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 300px;
+  margin: 10px;
+  width: 200px;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .title {
-  color: pink;
+  background-color: $light-orange;
+  color: $gray;
   display: block;
+  margin: 0;
+  padding: 2em;
+  text-align: center;
 }
 
 
@@ -8,4 +27,25 @@
   background-color: #000;
   color: #FFF;
   padding: 10em;
+}
+
+
+.cards {
+  align-items: flex-end;
+  display: flex;
+  height: 82vh;
+  justify-content: center;
+}
+
+
+.stone {
+  @extend %card-form;
+}
+
+.paper {
+  @extend %card-form;
+}
+
+.cut {
+  @extend %card-form;
 }
